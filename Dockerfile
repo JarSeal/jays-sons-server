@@ -9,4 +9,4 @@ RUN npm install -g json-server
 
 COPY db.json db.json
 
-ENTRYPOINT ["json-server", "--host", "0.0.0.0"]
+ENTRYPOINT ["json-server", "-p", "80", "--host", "0.0.0.0"]
